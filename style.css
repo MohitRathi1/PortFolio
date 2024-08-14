@@ -42,6 +42,7 @@
   }
 
   body{
+    background-image: url(bg.jpg);
     cursor: none;
     display: grid;
     place-items: center;
