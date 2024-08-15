@@ -26,8 +26,9 @@
 .wrapper .btn-area:hover .btn-animation {
   right: 0;
 }
-.btn-area:hover button{
-  cursor: none ;
+
+.btn-area:hover button {
+  cursor: none;
 }
 
 .wrapper .btn-area button {
@@ -45,6 +46,7 @@
 }
 
 body {
+  overflow: hidden;
   background-image: url(bg.jpg);
   cursor: hidden;
   display: grid;
@@ -61,9 +63,9 @@ body {
 }
 
 .box-area .box {
-height: 100%;
-width: 100%;
-text-align: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
   margin: 40px;
   flex: 0 1 300px;
   border-radius: 20px;
@@ -73,9 +75,9 @@ text-align: center;
   border: rgb(126, 126, 126) 1px solid;
 }
 
- .box-area .box:hover{
+.box-area .box:hover {
   box-shadow: 0 5px 10px aqua;
-  background-color:red ;
+  background-color: red;
   transform: scale(1.02);
 }
 
@@ -113,13 +115,13 @@ text-align: center;
 
 .socials i:hover {
   transform: scale(1.5);
-  }
+}
 
 .rightside .image {
   z-index: -1;
   top: -130px;
   right: -220px;
-  position:relative;
+  position: relative;
 }
 
 .rightside {
@@ -129,10 +131,54 @@ text-align: center;
   position: relative;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
+  .box {
+    width: 100%;
+    /* Make the box full width */
+    margin: 10px 0;
+    /* Add some space between boxes */
+  }
+
+  .box img {
+    max-width: 60px;
+    height: auto;
+  }
+
+  .box h2 {
+    font-size: 1.2em;
+  }
+
+  .box p {
+    font-size: 0.3em;
+    margin: 10px 10px;
+  }
+  .socials i{
+    font-size: 10px;
+    margin: 10%;
+  }
+
+  .wrapper .btn-area{
+    width: 100px;
+  }
+
+  .btn-area button {
+    font-size: 0.5em;
+  }
+
   .rightside {
-    right: 20px;
+    height: 300px;
+    top: 200px;
+    right: 305px;
+    position: relative ;
+    margin: 2px;
+  }
+
+  .rightside .box-area {
+    top: -60px;
+    right: -60px;
     position: relative;
+    height: 185px;
+    width: 130px;
   }
 }
 
