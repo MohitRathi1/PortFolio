@@ -1,11 +1,38 @@
 body{
   overflow-x: hidden;
-  background: #000;
+  background: #151515;
 }
-
+.hero{
+  margin-top: 100px;
+  margin-left: 150px;
+}
 .hero img{
   border-radius: 50%;
-  margin: 100px;
-  margin-left: 150px;
-  border: #222 8px solid;
+  border: #222 10px solid;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.hero img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.hero h5{
+  color: #555;
+  font-size: 1em;
+  /* margin-left: 40px; */
+}
+.hero p{
+  color: #666;
+  font-size: large;
+}
+.hero h1{
+  color: #222;
+  font-size: 3em;
+  line-height: 30px;
+  font-family: 'poppin';
+  
+}
+.hero .h1s{
+  color: #666;
 }
