@@ -1,12 +1,25 @@
 body{
   overflow-x: hidden;
   background: #151515;
+  display: flex;
 }
 .hero{
-  margin-top: 100px;
-  margin-left: 150px;
+  width: 1000px;
+  position:fixed;
+  /* border: #fff 1px solid; */
+}
+.box{
+  width: 1000px;
+  position: relative;
+  z-index: -1;
+}
+.hero h1,h5,p{
+  margin-top: 10px;
+  margin-left: 70px;
 }
 .hero img{
+  margin-top: 70px;
+  margin-left: 150px;
   border-radius: 50%;
   border: #222 10px solid;
   -webkit-filter: grayscale(100%);
@@ -18,21 +31,28 @@ body{
   filter: grayscale(0%);
 }
 .hero h5{
-  color: #555;
+  color: #777;
   font-size: 1em;
   /* margin-left: 40px; */
 }
-.hero p{
-  color: #666;
-  font-size: large;
-}
+
 .hero h1{
-  color: #222;
+  color: #999;
   font-size: 3em;
   line-height: 30px;
   font-family: 'poppin';
   
 }
 .hero .h1s{
-  color: #666;
+  color: #444;
+}
+.main{
+  float: right;
+  width: 750px !important;
+  padding: 10px 20px ;
+  margin: 0px 80px 0px 0px;
+  /* border: #fff 1px solid; */
+}
+.main p{
+  color: #ffff;
 }
