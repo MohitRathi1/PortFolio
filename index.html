@@ -10,9 +10,12 @@
 <body>
     
     <div class="hero">
-        <img src="my_image.jpg" alt="" height="200px" width="200px">
+     <img src="my_image.jpg" alt="" height="200px" width="200px">
         <h5>Hello, Im ...</h5>
-        <h1 class="light"><span>Mohit Rathi</span></h1>
+
+        <div class="mouse_move">
+        <h1 id="img1" class="light " value="5"><span>Mohit Rathi</span></h1>
+        </div>
         <h1 class="h1s">I build things for the web. </h1>
         <!-- <p>I build orignal webite like experience in my web pages and also responsive</p> -->
         <p class="socials">
@@ -36,13 +39,49 @@
         </div>
 
         <div class="About">
-        <p>I am pursuing a Bachelor of Computer Applications (BCA) at <a href="">Sanjay Ghodawat University</a>, where my focus is on web development. I have developed a solid foundation in programming languages, including C, C++, EcmaScript, PHP, MySQL, and Java. These skills enable me to build efficient and dynamic web applications that meet modern industry standards. My passion for web development drives me to continually improve my abilities and stay updated with the latest technological advancements. </p>
+        <p>I am pursuing a Bachelor of Computer Applications (BCA) at <a href="">Sanjay Ghodawat University</a>, where my focus is on web development. These skills enable me to build efficient and dynamic web applications that meet modern industry standards. My passion for web development drives me to continually improve my abilities and stay updated with the latest technological advancements. </p>
         <p>Beyond academics, I have actively participated in various national-level events,<a href=""> winning two national-level tech hackathons.</a> These achievements have significantly boosted my confidence and provided valuable <a href="">real-world experience.</a> </p>
         <p>They reflect my dedication to continuous learning and my eagerness to excel in the tech industry. As I progress, I aim to leverage my skills and experiences to make meaningful <a href="">contributions</a> to the field of web development.</p>
         </div>
     
+        <!-- I have developed a solid foundation in programming languages, including C, C++, EcmaScript, PHP, MySQL, and Java.  -->
     </div>
 
+    <div class="courser-dot"></div>
+    <div class="courser-outline"></div>
+    <script src="javascript.js"></script>
     <!-- linkedin :https://in.linkedin.com/in/mohit-rathi-a2745a290?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F -->
+</body>
+</html>
+
+
+<!-- Filename:index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        
+
+    </style>
+    <title>Parallax</title>
+</head>
+
+<body>
+    
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(event) {
+            this.querySelectorAll(".mouse").forEach((shift) => {
+                const position = shift.getAttribute("value");
+                const x = (window.innerWidth - event.pageX * position) / 90;
+                const y = (window.innerHeight - event.pageY * position) / 90;
+
+                shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        }
+    </script>
 </body>
 </html>

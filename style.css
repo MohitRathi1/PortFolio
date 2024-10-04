@@ -2,6 +2,7 @@ body{
   overflow-x: hidden;
   background: #151515;
   display: flex;
+  cursor: none ;
 }
 .hero{
   width: 1000px;
@@ -55,10 +56,10 @@ body{
   color: #444;
 }
 .hero p{
-  color: #444;
+  color: #666;
 }
 .hero p i{
-font-size: 25px;
+font-size: 25px ;
 margin-right: 20px;
 }
 .main{
@@ -92,8 +93,39 @@ margin-right: 20px;
 .navbar ul li a{
   color: rgb(3, 253, 182);
   padding: 10px;
-  transition: transform(1s);
+  transition: 1s;
 }
 .navbar ul li a:hover{
-  border:rgb(0, 255, 145) 1px solid ;
+  border-bottom:rgb(0, 255, 145) 1px solid ;
+  cursor: none;
+transform:scale(1.5);
 }
+
+ /* courser-dot */
+.courser-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #fefefe;
+}
+
+.courser-outline {
+  width: 30px;
+  height: 30px;
+  border: #fefefe 1px solid;
+}
+
+.courser-dot,
+.courser-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+a,p,h1,li,ul{
+  cursor: none;
+}
+
+
